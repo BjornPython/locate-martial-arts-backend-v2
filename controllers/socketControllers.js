@@ -8,7 +8,7 @@ const { editUserConvoSeen }  = require("./userControllers")
 const makeSocket = (server) => {
     const io = require('socket.io')(server, {
         cors: {
-            origin: "http://localhost:5000"
+            origin: process.env.CLIENT_URL
         }
     });
 
