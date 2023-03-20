@@ -9,7 +9,7 @@ const makeSocket = (server) => {
     const io = require('socket.io')(server, {
         cors: {
             // origin: process.env.CLIENT_URL
-            origin: ["https://locatemartialarts.netlify.app/", "https://friendly-alfajores-5eb56d.netlify.app"]
+            origin: ["https://locatemartialarts.netlify.app", "https://friendly-alfajores-5eb56d.netlify.app"]
         }
     });
 
